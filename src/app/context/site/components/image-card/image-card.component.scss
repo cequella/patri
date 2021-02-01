@@ -1,0 +1,17 @@
+img {
+  object-fit: cover !important;
+}
+
+.detail {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.5);
+
+  h3, p {
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px black !important;
+  }
+}

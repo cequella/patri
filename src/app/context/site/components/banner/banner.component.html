@@ -1,0 +1,5 @@
+<carousel [cellWidth]="'100%'" [dots]="!showDescription" [arrows]="showDescription">
+  <div *ngFor="let image of content" class="carousel-cell">
+    <site-image-card mat-ripple [content]="image" [routerLink]="image.id.toString()" [showDescription]="showDescription"></site-image-card>
+  </div>
+</carousel>

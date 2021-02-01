@@ -1,0 +1,6 @@
+<h3 *ngIf="title">{{ title }}</h3>
+<carousel [arrows]="false">
+  <div *ngFor="let image of content" class="carousel-cell">
+    <site-image-card mat-ripple [content]="image" [routerLink]="image.id.toString()"></site-image-card>
+  </div>
+</carousel>

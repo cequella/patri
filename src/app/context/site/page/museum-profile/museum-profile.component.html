@@ -1,0 +1,18 @@
+<site-banner [content]="museum.imageList" [showDescription]="false"></site-banner>
+<main>
+  <h2>{{museum.name}}</h2>
+  <site-rate-view [value]="museum.rate"></site-rate-view>
+  <p>{{museum.description}}</p>
+  <p>
+    <fa-icon [icon]="ticketIcon"></fa-icon>
+    <strong>Entrada: </strong>{{museum.price}}
+  </p>
+  <p>
+    <fa-icon [icon]="phoneIcon"></fa-icon>
+    <strong>Telefone: </strong>{{museum.phone}}
+  </p>
+  <p>
+    <fa-icon [icon]="webIcon"></fa-icon>
+    <strong>Site: </strong>{{museum.site}}
+  </p>
+</main>
